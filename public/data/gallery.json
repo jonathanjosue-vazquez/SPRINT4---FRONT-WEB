@@ -1,0 +1,11 @@
+[
+  { "id": 1, "titulo": "Quadro — Equações diferenciais", "disciplina": "Cálculo", "tipo": "quadro", "data": "2026-08-18" },
+  { "id": 2, "titulo": "Slide — Arquitetura de Software", "disciplina": "Engenharia de Software", "tipo": "slide", "data": "2026-08-19" },
+  { "id": 3, "titulo": "Caderno — Anotações de UX Research", "disciplina": "Total Experience Design", "tipo": "caderno", "data": "2026-08-20" },
+  { "id": 4, "titulo": "Quadro — Diagrama de Caso de Uso", "disciplina": "Engenharia de Software", "tipo": "quadro", "data": "2026-08-21" },
+  { "id": 5, "titulo": "Slide — Introdução a APIs REST", "disciplina": "Web Development", "tipo": "slide", "data": "2026-08-22" },
+  { "id": 6, "titulo": "Caderno — Story Canvas da JOVI", "disciplina": "Storytelling", "tipo": "caderno", "data": "2026-08-25" },
+  { "id": 7, "titulo": "Quadro — CSS Grid na prática", "disciplina": "Front-End Design", "tipo": "quadro", "data": "2026-08-26" },
+  { "id": 8, "titulo": "Slide — Estruturas de dados em Python", "disciplina": "Computational Thinking", "tipo": "slide", "data": "2026-08-27" },
+  { "id": 9, "titulo": "Caderno — Heurísticas de Nielsen", "disciplina": "Total Experience Design", "tipo": "caderno", "data": "2026-08-28" }
+]

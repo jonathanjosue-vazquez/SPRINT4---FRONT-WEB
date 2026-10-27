@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+/*
+ * Tokens de marca da JOVI — Galeria Inteligente.
+ * Mesmos valores usados no protótipo estático da Sprint 3 (HTML/CSS puro),
+ * agora expostos como tema do Tailwind (bg-primary, text-dark, etc.)
+ * para uso em classes utilitárias em todo o projeto.
+ */
+@theme {
+  --color-primary: #3a86ff;
+  --color-primary-dark: #004aad;
+  --color-accent: #5de0e6;
+  --color-dark: #1d3557;
+  --color-text: #344054;
+  --color-muted: #667085;
+  --color-background: #e3f4fa;
+  --color-surface: #ffffff;
+  --color-soft-blue: #cce4fc;
+  --color-border: rgba(29, 53, 87, 0.08);
+
+  --font-display: "Poppins", sans-serif;
+
+  --shadow-brand: 0 12px 35px rgba(29, 53, 87, 0.08);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 90px;
+  }
+
+  body {
+    min-width: 320px;
+    overflow-x: hidden;
+    font-family: var(--font-display);
+    color: var(--color-text);
+    background: var(--color-background);
+    line-height: 1.6;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  body::selection {
+    color: #fff;
+    background: var(--color-primary);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button,
+  input,
+  textarea {
+    font: inherit;
+  }
+
+  :focus-visible {
+    outline: 3px solid rgba(58, 134, 255, 0.45);
+    outline-offset: 3px;
+  }
+}
+
+/* Gradiente de marca reutilizado em botões/destaques — não existe como
+   utilitário nativo do Tailwind, por isso é a única classe custom do projeto. */
+.bg-brand-gradient {
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-primary-dark) 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
