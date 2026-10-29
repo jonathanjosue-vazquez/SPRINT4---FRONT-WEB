@@ -20,14 +20,14 @@ export default function TeamSection() {
         Nossa Equipe
       </h2>
 
-      {/* Alteração na grid: sm:grid-cols-3 e justify-center */}
+      {/* Ajustado para grid-cols-3 direto no mobile com espaçamento responsivo */}
       <div
-        className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-3 justify-center items-center max-w-3xl mx-auto"
+        className="mt-10 grid grid-cols-3 gap-2 sm:gap-8 justify-center items-start max-w-3xl mx-auto"
         aria-live="polite"
       >
         {integrantes.map(({ nome, rm, foto }) => (
-          <article key={rm} className="flex flex-col items-center gap-3">
-            <div className="h-20 w-20 overflow-hidden rounded-full bg-white/10 text-lg font-bold text-white">
+          <article key={rm} className="flex flex-col items-center gap-2">
+            <div className="h-16 w-16 sm:h-20 sm:w-20 overflow-hidden rounded-full bg-white/10 text-base sm:text-lg font-bold text-white">
               {foto ? (
                 <img src={foto} alt={nome} className="h-full w-full object-cover" />
               ) : (
@@ -36,8 +36,10 @@ export default function TeamSection() {
                 </span>
               )}
             </div>
-            <h3 className="text-sm font-semibold text-white">{nome}</h3>
-            <span className="text-xs text-white/70">{rm}</span>
+            <h3 className="text-xs sm:text-sm font-semibold text-white leading-tight">
+              {nome}
+            </h3>
+            <span className="text-[10px] sm:text-xs text-white/70">{rm}</span>
           </article>
         ))}
       </div>
