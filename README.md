@@ -128,20 +128,12 @@ aumentaria bastante o risco de regressão visual.
 
 ## Uso de Inteligência Artificial no desenvolvimento
 
-O Claude (Anthropic) foi utilizado como ferramenta de apoio ao longo da evolução da Sprint 3 para
-a Sprint 4, especificamente para:
+Durante o desenvolvimento da Sprint 4, foram utilizadas ferramentas de inteligência artificial como apoio ao processo de desenvolvimento e revisão do projeto.
 
-* Auditar os dois projetos herdados da Sprint 3 (landing estática e app React) e identificar
-  divergências de conteúdo e identidade entre eles.
-* Apoiar a migração de CSS puro para Tailwind CSS, preservando a paleta e a tipografia originais
-  da JOVI.
-* Implementar a Galeria Inteligente (service, custom hook, componentes de apresentação) seguindo
-  o padrão de separação entre dados, lógica e visual já usado no projeto (mesmo padrão do
-  `AuthContext`).
-* Revisar responsividade, nomes de variáveis e organização de pastas.
+- **Gemini:** utilizado para esclarecer dúvidas pontuais relacionadas a HTML e CSS, auxiliando na compreensão de conceitos e na resolução de questões durante o desenvolvimento.
+- **Claude (Anthropic):** utilizado principalmente como ferramenta de orientação e validação técnica, auxiliando na análise da estrutura do projeto, na revisão das decisões de implementação e na identificação de possíveis melhorias.
 
-Todas as decisões de arquitetura, o conteúdo final e a revisão do código foram validados pela
-equipe responsável pelo projeto.
+As ferramentas foram utilizadas como apoio, enquanto a equipe ficou responsável por avaliar as sugestões, validar as decisões e definir o conteúdo e a estrutura finais do projeto.
 
 ## Observações
 
