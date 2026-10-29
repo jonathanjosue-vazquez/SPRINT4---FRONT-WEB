@@ -17,13 +17,13 @@ export default function Hero() {
           ✦ Agora com câmera inteligente
         </span>
 
-        <h1
-          id="hero-title"
-          className="max-w-3xl text-[clamp(2.1rem,6vw,3.5rem)] font-extrabold leading-tight text-white"
-        >
-          Capture<span className="text-dark/40">/</span>Organize
-          <span className="text-dark/40">/</span>Estude.
-        </h1>
+<h1
+  id="hero-title"
+  className="w-full max-w-3xl text-2xl font-extrabold leading-tight text-white break-words sm:text-4xl md:text-5xl"
+>
+  Capture<span className="text-dark/40">/</span>Organize
+  <span className="text-dark/40">/</span>Estude.
+</h1>
 
         <p className="max-w-xl text-base text-white/90 sm:text-lg">
           A câmera do seu smartphone, redesenhada para o dia a dia de quem estuda: fotografe o

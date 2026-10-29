@@ -32,7 +32,7 @@ export default function JourneySection() {
             <img
               src={IMAGENS[id]}
               alt={legenda}
-              className="h-56 w-full object-cover object-top sm:h-64"
+              className="h-auto w-full object-contain object-top"
               loading="lazy"
             />
             <figcaption className="p-5">
