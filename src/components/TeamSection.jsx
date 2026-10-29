@@ -20,7 +20,7 @@ export default function TeamSection() {
         Nossa Equipe
       </h2>
 
-      {/* Ajustado para grid-cols-3 direto no mobile com espaçamento responsivo */}
+      
       <div
         className="mt-10 grid grid-cols-3 gap-2 sm:gap-8 justify-center items-start max-w-3xl mx-auto"
         aria-live="polite"
